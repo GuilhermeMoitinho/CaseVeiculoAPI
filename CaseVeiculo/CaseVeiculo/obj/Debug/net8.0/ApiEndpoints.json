@@ -27,7 +27,7 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
-        "StatusCode": 201
+        "StatusCode": 200
       },
       {
         "Type": "System.Void",
@@ -50,7 +50,18 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "CaseVeiculo.Controllers.VeiculoController",

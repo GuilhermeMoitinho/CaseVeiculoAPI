@@ -1,4 +1,5 @@
-﻿using CaseVeiculo.Application.Application.DTOs.viewModel;
+﻿using CaseVeiculo.Application.Application.DTOs.inpuModel;
+using CaseVeiculo.Application.Application.DTOs.viewModel;
 using CaseVeiculo.Domain.Model.entities;
 
 namespace CaseVeiculo.Application.Application.Extensions.ExtensionsViewModel
@@ -17,6 +18,17 @@ namespace CaseVeiculo.Application.Application.Extensions.ExtensionsViewModel
             };
 
             return viewModel;   
+        }
+
+        public static VeiculoViewModel TransFormarIdEmViewModel
+            (this Guid id)
+        {
+            var viewModel = new VeiculoViewModel()
+            {
+                Id = id,
+            };
+
+            return viewModel;
         }
 
         public static IEnumerable<VeiculoViewModel> TransformarEmListaDeViewModel

@@ -13,13 +13,11 @@ namespace CaseVeiculo.Controllers
     [ApiController]
     public class VeiculoController : ControllerBase
     {
-        private readonly IVeiculoService _VeiculoService;
-        private readonly AppDbContext _context;
-
-        public VeiculoController(IVeiculoService veiculoService, AppDbContext context)
+        private readonly IVeiculoService _veiculoService;
+   
+        public VeiculoController(IVeiculoService veiculoService)
         {
-            _VeiculoService = veiculoService;
-            _context = context;
+            _veiculoService = veiculoService;
         }
 
         [HttpPatch]
@@ -29,15 +27,15 @@ namespace CaseVeiculo.Controllers
         {
             if (Id == Guid.Empty) return BadRequest();
 
-            var VeiculoEspecifico = await _VeiculoService.BuscarVeiculoPorId(Id);
-            var IfValidTransition = _VeiculoService.IsValidTransition(VeiculoEspecifico.Estado, estado);
+            var VeiculoEspecifico = await _veiculoService.BuscarVeiculoPorId(Id);
+            var IfValidTransition = _veiculoService.IsValidTransition(VeiculoEspecifico.Estado, estado);
 
             if (!IfValidTransition) return BadRequest("Transação inválida");
 
             if (horaDaAlteracao > DateTime.Now)
                 return BadRequest("Não é permitido inserir uma operação de alteração de estado no futuro");
 
-            await _VeiculoService.AlterarEstado(Id, estado, DateTime.Now);
+            await _veiculoService.AlterarEstado(Id, estado, DateTime.Now);
 
             return NoContent();
         }
@@ -51,7 +49,7 @@ namespace CaseVeiculo.Controllers
         {
             if (Id == Guid.Empty) return BadRequest();
 
-            var veiculoEntity =  await _VeiculoService.BuscarVeiculoPorId(Id);
+            var veiculoEntity =  await _veiculoService.BuscarVeiculoPorId(Id);
             var VeiculoViewModel = veiculoEntity.TransFormarEmViewModel();
             var response = new Response(VeiculoViewModel);
 
@@ -67,7 +65,7 @@ namespace CaseVeiculo.Controllers
 
             if(estadoAtual == null) return BadRequest();
 
-            var ListaDeVeiculos = await _VeiculoService.ListarVeiculosPeloEstado(estadoAtual);
+            var ListaDeVeiculos = await _veiculoService.ListarVeiculosPeloEstado(estadoAtual);
 
             if (ListaDeVeiculos == null) return NotFound();
 
@@ -88,14 +86,13 @@ namespace CaseVeiculo.Controllers
 
             var veiculo = inputModel.TransFormarEmEntidade();
 
-            var valor = await _context.Veiculos.AddAsync(veiculo);
-            await _context.SaveChangesAsync();
+            await _veiculoService.AddAsync(veiculo);
 
-            var viewModel = valor.Entity.TransFormarEmViewModel();
+            var viewModel = veiculo.TransFormarEmViewModel();
 
             var response = new Response(viewModel);
 
-            return CreatedAtAction(nameof(BuscarVeiculoPorId), new {Id = viewModel.Id }, response);
+            return CreatedAtAction(nameof(BuscarVeiculoPorId), new {Id = veiculo.Id }, response);
         }
     }
 }

@@ -13,3 +13,4 @@ C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.D
 C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\refint\CaseVeiculo.Data.dll
 C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.pdb
 C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\ref\CaseVeiculo.Data.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.sourcelink.json

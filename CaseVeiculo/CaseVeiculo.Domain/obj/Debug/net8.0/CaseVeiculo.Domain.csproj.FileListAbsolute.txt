@@ -9,3 +9,4 @@ C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo
 C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\refint\CaseVeiculo.Domain.dll
 C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.pdb
 C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\ref\CaseVeiculo.Domain.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.sourcelink.json

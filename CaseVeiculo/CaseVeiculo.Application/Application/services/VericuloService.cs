@@ -16,6 +16,12 @@ namespace CaseVeiculo.Application.Application.services
             _UoW = uoW;
         }
 
+        public async Task AddAsync(Veiculo veiculo)
+        {
+            await _repository.AddAsync(veiculo);
+            await _UoW.SaveChangesAsync();
+        }
+
         public async Task AlterarEstado(Guid Id, EstadosDoVeiculo estado, DateTime dataDeAlteracao)
         {
             await _repository.AlterarEstado(Id, estado, dataDeAlteracao);
@@ -23,7 +29,7 @@ namespace CaseVeiculo.Application.Application.services
         }
 
         public async Task<Veiculo> BuscarVeiculoPorId(Guid Id)
-            => await _repository.BuscarVeiculoPorId(Id);
+            => await _repository.BuscarVeiculoPorIdAsync(Id);
             
         public bool IsValidTransition(EstadosDoVeiculo estadoAtual, EstadosDoVeiculo novoEstado)
             => _repository.IsValidTransition(estadoAtual, novoEstado);

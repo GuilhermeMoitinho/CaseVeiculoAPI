@@ -9,7 +9,7 @@ namespace CaseVeiculo.Application.Application.interfaces
         Task AlterarEstado(Guid Id, EstadosDoVeiculo estado, DateTime dataDeAlteracao);
         bool IsValidTransition(EstadosDoVeiculo estadoAtual, EstadosDoVeiculo novoEstado);
         Task<Veiculo> BuscarVeiculoPorId(Guid Id);
-
+        Task AddAsync(Veiculo veiculo);
         Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual);
     }
 }
