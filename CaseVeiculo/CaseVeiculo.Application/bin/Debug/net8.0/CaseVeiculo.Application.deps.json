@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CaseVeiculo.Application/1.0.0": {
+        "dependencies": {
+          "CaseVeiculo.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CaseVeiculo.Application.dll": {}
+        }
+      },
+      "CaseVeiculo.Domain/1.0.0": {
+        "runtime": {
+          "CaseVeiculo.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CaseVeiculo.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaseVeiculo.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "CaseVeiculo.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CaseVeiculo.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseVeiculo.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CaseVeiculo.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CaseVeiculo.Domain/CaseVeiculo.Domain.csproj",
+      "msbuildProject": "../CaseVeiculo.Domain/CaseVeiculo.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "CaseVeiculo.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\andre\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
+      "projectName": "CaseVeiculo.Application",
+      "projectPath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Domain\\CaseVeiculo.Domain.csproj": {
+              "projectPath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Domain\\CaseVeiculo.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

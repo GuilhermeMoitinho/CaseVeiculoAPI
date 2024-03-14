@@ -1,0 +1,11 @@
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\bin\Debug\net8.0\CaseVeiculo.Domain.deps.json
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\bin\Debug\net8.0\CaseVeiculo.Domain.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\bin\Debug\net8.0\CaseVeiculo.Domain.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.AssemblyInfoInputs.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.AssemblyInfo.cs
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.csproj.CoreCompileInputs.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\refint\CaseVeiculo.Domain.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\CaseVeiculo.Domain.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Domain\obj\Debug\net8.0\ref\CaseVeiculo.Domain.dll

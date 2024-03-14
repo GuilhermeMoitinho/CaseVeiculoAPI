@@ -1,0 +1,15 @@
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\bin\Debug\net8.0\CaseVeiculo.Application.deps.json
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\bin\Debug\net8.0\CaseVeiculo.Application.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\bin\Debug\net8.0\CaseVeiculo.Application.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\bin\Debug\net8.0\CaseVeiculo.Domain.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\bin\Debug\net8.0\CaseVeiculo.Domain.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.csproj.AssemblyReference.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.AssemblyInfoInputs.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.AssemblyInfo.cs
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.csproj.CoreCompileInputs.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeic.BB146404.Up2Date
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\refint\CaseVeiculo.Application.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\CaseVeiculo.Application.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Application\obj\Debug\net8.0\ref\CaseVeiculo.Application.dll

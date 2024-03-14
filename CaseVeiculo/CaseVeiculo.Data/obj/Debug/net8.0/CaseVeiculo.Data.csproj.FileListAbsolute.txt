@@ -1,0 +1,15 @@
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\bin\Debug\net8.0\CaseVeiculo.Data.deps.json
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\bin\Debug\net8.0\CaseVeiculo.Data.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\bin\Debug\net8.0\CaseVeiculo.Data.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\bin\Debug\net8.0\CaseVeiculo.Domain.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\bin\Debug\net8.0\CaseVeiculo.Domain.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.csproj.AssemblyReference.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.AssemblyInfoInputs.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.AssemblyInfo.cs
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.csproj.CoreCompileInputs.cache
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeic.7FED5FB7.Up2Date
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\refint\CaseVeiculo.Data.dll
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\CaseVeiculo.Data.pdb
+C:\ProjetoFelipeMelo\CaseVeiculo\CaseVeiculo.Data\obj\Debug\net8.0\ref\CaseVeiculo.Data.dll
