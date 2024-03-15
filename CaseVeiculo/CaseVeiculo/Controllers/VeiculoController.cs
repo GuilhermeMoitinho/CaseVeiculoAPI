@@ -26,7 +26,7 @@ namespace CaseVeiculo.Controllers
 
         [HttpPatch]
         [ProducesResponseType(200)]
-        [ProducesResponseType(500)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> AlterarEstado(Guid Id, EstadosDoVeiculo estado)
         {
             if (Id == Guid.Empty) return BadRequest();
@@ -46,7 +46,7 @@ namespace CaseVeiculo.Controllers
         [ActionName("BuscarVeiculoPorId")]
         [HttpGet("{Id:Guid}")]
         [ProducesResponseType(200)]
-        [ProducesResponseType(500)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> BuscarVeiculoPorId(Guid Id)
         {
             if (Id == Guid.Empty) return BadRequest();
@@ -61,7 +61,7 @@ namespace CaseVeiculo.Controllers
 
         [HttpGet("{estadoAtual}")]
         [ProducesResponseType(200)]
-        [ProducesResponseType(500)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> GetVeiculosPeloEstado(EstadosDoVeiculo estadoAtual)
         {
 
@@ -81,7 +81,7 @@ namespace CaseVeiculo.Controllers
 
         [HttpPost]
         [ProducesResponseType(201)]
-        [ProducesResponseType(500)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> CriarVeiculo(VeiculoInpuModel inputModel)
         {
             if (inputModel is null) return BadRequest();

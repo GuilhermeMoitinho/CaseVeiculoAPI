@@ -20,7 +20,9 @@ namespace CaseVeiculo.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAuditor(Guid id)
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        public async Task<IActionResult> GetAuditoria(Guid id)
         {
            if (id == Guid.Empty) return BadRequest();
 
