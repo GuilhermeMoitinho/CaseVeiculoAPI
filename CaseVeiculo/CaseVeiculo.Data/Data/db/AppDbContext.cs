@@ -7,6 +7,8 @@ namespace CaseVeiculo.Data.Data.db
     {
         public DbSet<Veiculo> Veiculos { get; set; }
 
+        public DbSet<AuditoriaVeiculo> AuditoriaDoVeiculo { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> op) : base(op)
         {
         }

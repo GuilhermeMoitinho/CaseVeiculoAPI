@@ -15,13 +15,13 @@ namespace CaseVeiculo.Data.Data.repository.contracts
             db = context.Set<T>();
         }
 
-        public async Task AddAsync(T entity)
+        public virtual async Task AddAsync(T entity)
         {
             await db.AddAsync(entity);
         }
         
 
-        public async Task<T> BuscarVeiculoPorIdAsync(Guid Id)
+        public virtual async Task<T> BuscarVeiculoPorIdAsync(Guid Id)
         {
             var VeiculoEspecifico = await db.FindAsync(Id);
 

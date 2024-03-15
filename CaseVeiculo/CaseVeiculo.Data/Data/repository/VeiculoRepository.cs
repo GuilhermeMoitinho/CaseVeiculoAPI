@@ -15,12 +15,28 @@ namespace CaseVeiculo.Data.Data.repository
     public class VeiculoRepository : baseRepository<Veiculo>, IVeiculoRepository
     {
         private readonly AppDbContext _context;
-        public VeiculoRepository(AppDbContext context) : base(context)
+        private readonly IAuditoriaRepository _auditoriaRepository;
+
+        public VeiculoRepository(AppDbContext context, IAuditoriaRepository auditoriaRepository) 
+                : base(context)
         {
             _context = context;
+            _auditoriaRepository = auditoriaRepository;
         }
 
-        public async Task AlterarEstado(Guid Id, EstadosDoVeiculo estado, DateTime dataDeAlteracao)
+        public override Task<Veiculo> BuscarVeiculoPorIdAsync(Guid Id)
+        {
+            return base.BuscarVeiculoPorIdAsync(Id);
+        }
+
+        public override Task AddAsync(Veiculo entity)
+        {
+            var retorno = base.AddAsync(entity);
+
+            return retorno;
+        }
+
+        public async Task AlterarEstado(Guid Id, EstadosDoVeiculo estado)
         {
             var veiculoEspecifico = await _context.Veiculos.FindAsync(Id);
 
@@ -28,7 +44,6 @@ namespace CaseVeiculo.Data.Data.repository
                 throw new Exception("Transição de estado inválida");
 
             veiculoEspecifico.Estado = estado;
-            veiculoEspecifico.DataDeAlteracao = dataDeAlteracao;
 
             db.Update(veiculoEspecifico);
         }

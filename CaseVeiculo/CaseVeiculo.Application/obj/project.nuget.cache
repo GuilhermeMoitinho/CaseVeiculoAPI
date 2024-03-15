@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lDyXeMeEoErI7YMlRq32PuWrFhCO5vIQ7UM4oiaNYOv2RgyYbtgWvv8Gf0WeHkvbQwoU5CeVHcJi64Xt7T1oWg==",
+  "dgSpecHash": "VA471If5WMndujrYlesuQSPNMVPNZmSmU0KV1GZmtD3ToWJDV67fuZTZ4sXEODJV9kWLoG8m5nNv7Cc6eOonHw==",
   "success": true,
-  "projectFilePath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
+  "projectFilePath": "D:\\Estudos\\EstudandoNoMomento\\CaseVeiculoAPI\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

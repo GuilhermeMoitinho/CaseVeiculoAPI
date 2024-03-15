@@ -12,7 +12,6 @@ namespace CaseVeiculo.Application.Application.Extensions.ExtensionsViewModel
             var viewModel = new VeiculoViewModel()
             {
                 Id = veiculoEntity.Id,
-                DataDeAlteracao = veiculoEntity.DataDeAlteracao,
                 Estado = veiculoEntity.Estado,
                 MarcaDoVeiculo = veiculoEntity.MarcaDoVeiculo
             };

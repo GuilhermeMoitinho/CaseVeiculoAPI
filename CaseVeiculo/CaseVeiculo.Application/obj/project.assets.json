@@ -27,19 +27,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {}
+    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
+      "projectUniqueName": "D:\\Estudos\\EstudandoNoMomento\\CaseVeiculoAPI\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
       "projectName": "CaseVeiculo.Application",
-      "projectPath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Application\\obj\\",
+      "projectPath": "D:\\Estudos\\EstudandoNoMomento\\CaseVeiculoAPI\\CaseVeiculo\\CaseVeiculo.Application\\CaseVeiculo.Application.csproj",
+      "packagesPath": "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\",
+      "outputPath": "D:\\Estudos\\EstudandoNoMomento\\CaseVeiculoAPI\\CaseVeiculo\\CaseVeiculo.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Guilherme Moitinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Domain\\CaseVeiculo.Domain.csproj": {
-              "projectPath": "C:\\ProjetoFelipeMelo\\CaseVeiculo\\CaseVeiculo.Domain\\CaseVeiculo.Domain.csproj"
+            "D:\\Estudos\\EstudandoNoMomento\\CaseVeiculoAPI\\CaseVeiculo\\CaseVeiculo.Domain\\CaseVeiculo.Domain.csproj": {
+              "projectPath": "D:\\Estudos\\EstudandoNoMomento\\CaseVeiculoAPI\\CaseVeiculo\\CaseVeiculo.Domain\\CaseVeiculo.Domain.csproj"
             }
           }
         }
@@ -63,11 +68,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -89,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

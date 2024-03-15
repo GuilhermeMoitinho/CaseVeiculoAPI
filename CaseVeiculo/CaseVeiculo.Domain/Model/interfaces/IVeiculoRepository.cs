@@ -10,8 +10,9 @@ namespace CaseVeiculo.Domain.Model.interfaces
 {
     public interface IVeiculoRepository : IbaseRepository<Veiculo>
     {
-        Task AlterarEstado(Guid Id, EstadosDoVeiculo estado, DateTime dataDeAlteracao);
+        Task AlterarEstado(Guid Id, EstadosDoVeiculo estado);
         bool IsValidTransition(EstadosDoVeiculo estadoAtual, EstadosDoVeiculo novoEstado);
         Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual);
+        Task AddAsync(Veiculo veiculo);
     }
 }

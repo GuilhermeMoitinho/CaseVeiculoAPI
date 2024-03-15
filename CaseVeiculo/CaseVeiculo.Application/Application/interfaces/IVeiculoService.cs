@@ -6,7 +6,7 @@ namespace CaseVeiculo.Application.Application.interfaces
 {
     public interface IVeiculoService 
     {
-        Task AlterarEstado(Guid Id, EstadosDoVeiculo estado, DateTime dataDeAlteracao);
+        Task AlterarEstado(Guid Id, EstadosDoVeiculo estado);
         bool IsValidTransition(EstadosDoVeiculo estadoAtual, EstadosDoVeiculo novoEstado);
         Task<Veiculo> BuscarVeiculoPorId(Guid Id);
         Task AddAsync(Veiculo veiculo);

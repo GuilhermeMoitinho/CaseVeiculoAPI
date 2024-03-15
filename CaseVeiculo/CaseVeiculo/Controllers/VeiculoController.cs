@@ -6,6 +6,8 @@ using CaseVeiculo.Application.Application.Extensions.ExtensionsViewModel;
 using CaseVeiculo.Application.Application.serviceResponse;
 using CaseVeiculo.Application.Application.DTOs.inpuModel;
 using CaseVeiculo.Application.Application.Extensions.ExtensionsInputModel;
+using Microsoft.EntityFrameworkCore;
+using CaseVeiculo.Domain.Model.entities;
 
 namespace CaseVeiculo.Controllers
 {
@@ -14,16 +16,18 @@ namespace CaseVeiculo.Controllers
     public class VeiculoController : ControllerBase
     {
         private readonly IVeiculoService _veiculoService;
-   
-        public VeiculoController(IVeiculoService veiculoService)
+        private readonly AppDbContext _context;
+
+        public VeiculoController(IVeiculoService veiculoService, AppDbContext context)
         {
             _veiculoService = veiculoService;
+            _context = context;
         }
 
         [HttpPatch]
         [ProducesResponseType(200)]
         [ProducesResponseType(500)]
-        public async Task<IActionResult> AlterarEstado(Guid Id, EstadosDoVeiculo estado, DateTime horaDaAlteracao)
+        public async Task<IActionResult> AlterarEstado(Guid Id, EstadosDoVeiculo estado)
         {
             if (Id == Guid.Empty) return BadRequest();
 
@@ -32,13 +36,11 @@ namespace CaseVeiculo.Controllers
 
             if (!IfValidTransition) return BadRequest("Transação inválida");
 
-            if (horaDaAlteracao > DateTime.Now)
-                return BadRequest("Não é permitido inserir uma operação de alteração de estado no futuro");
-
-            await _veiculoService.AlterarEstado(Id, estado, DateTime.Now);
+            await _veiculoService.AlterarEstado(Id, estado);
 
             return NoContent();
         }
+
 
 
         [ActionName("BuscarVeiculoPorId")]
@@ -75,7 +77,7 @@ namespace CaseVeiculo.Controllers
 
             return Ok(response);
         }
-                 
+
 
         [HttpPost]
         [ProducesResponseType(201)]
@@ -92,7 +94,8 @@ namespace CaseVeiculo.Controllers
 
             var response = new Response(viewModel);
 
-            return CreatedAtAction(nameof(BuscarVeiculoPorId), new {Id = veiculo.Id }, response);
+            return CreatedAtAction(nameof(BuscarVeiculoPorId), new { Id = veiculo.Id }, response);
         }
+
     }
 }

@@ -10,7 +10,6 @@ namespace CaseVeiculo.Application.Application.Extensions.ExtensionsInputModel
             var veiculoEntity = new Veiculo()
             {
                 MarcaDoVeiculo = inputModel.MarcaDoVeiculo,
-                DataDeAlteracao = inputModel.DataDeAlteracao,
                 Estado = inputModel.Estado,
             };
 
