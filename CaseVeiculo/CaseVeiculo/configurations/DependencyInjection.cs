@@ -2,7 +2,6 @@
 using CaseVeiculo.Application.Application.services;
 using CaseVeiculo.Data.Data.db;
 using CaseVeiculo.Data.Data.repository;
-using CaseVeiculo.Data.Data.repository.contracts;
 using CaseVeiculo.Data.Data.UoW;
 using CaseVeiculo.Domain.Model.interfaces;
 using Microsoft.EntityFrameworkCore;

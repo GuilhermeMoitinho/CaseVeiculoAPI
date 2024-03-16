@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CaseVeiculo.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1048c1c27b5193e62742a312bd953354dc2473ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b2eaf8bda12e231739f68ec338ce4d90ddf5cf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CaseVeiculo.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CaseVeiculo.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

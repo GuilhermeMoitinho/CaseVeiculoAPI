@@ -10,7 +10,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CaseVeiculo.Data.Data.repository.contracts
+namespace CaseVeiculo.Data.Data.repository
 {
     public class AuditoriaRepository : IAuditoriaRepository
     {
