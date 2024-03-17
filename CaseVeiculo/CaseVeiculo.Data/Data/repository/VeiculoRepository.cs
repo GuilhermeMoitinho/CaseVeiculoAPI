@@ -62,12 +62,16 @@ namespace CaseVeiculo.Data.Data.repository
             }
         }
 
-        public async Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual)
+        public async Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual, 
+                                                                        int tamanhoPagina, 
+                                                                        int indicePagina)
         {
             var RetornoDaListaDoEstadoEspecifico =
                 await _context.Veiculos.Where
                 (VE => VE.Estado == estadoAtual)
                                 .AsNoTracking()
+                                .Skip(tamanhoPagina * (indicePagina - 1))
+                                .Take(tamanhoPagina)
                                 .ToListAsync();
 
             return RetornoDaListaDoEstadoEspecifico;

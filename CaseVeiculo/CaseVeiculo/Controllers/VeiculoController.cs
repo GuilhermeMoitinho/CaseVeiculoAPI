@@ -58,12 +58,16 @@ namespace CaseVeiculo.Controllers
         [HttpGet("{estadoAtual}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        public async Task<IActionResult> GetVeiculosPeloEstado(EstadosDoVeiculo estadoAtual)
+        public async Task<IActionResult> GetVeiculosPeloEstado(EstadosDoVeiculo estadoAtual, 
+                                                               int tamanhoPagina, 
+                                                               int indicePagina)
         {
 
             if(estadoAtual == null) return BadRequest();
 
-            var ListaDeVeiculos = await _veiculoService.ListarVeiculosPeloEstado(estadoAtual);
+            var ListaDeVeiculos = await _veiculoService.ListarVeiculosPeloEstado(estadoAtual, 
+                                                                                tamanhoPagina, 
+                                                                                indicePagina);
 
             if (ListaDeVeiculos == null) return NotFound();
 

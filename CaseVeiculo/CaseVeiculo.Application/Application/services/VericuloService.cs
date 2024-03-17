@@ -40,8 +40,10 @@ namespace CaseVeiculo.Application.Application.services
         public bool IsValidTransition(EstadosDoVeiculo estadoAtual, EstadosDoVeiculo novoEstado)
             => _repository.IsValidTransition(estadoAtual, novoEstado);
 
-        public Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual)
-            => _repository.ListarVeiculosPeloEstado(estadoAtual);
+        public Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual, 
+                                                                   int tamanhoPagina, 
+                                                                   int indicePagina)
+            => _repository.ListarVeiculosPeloEstado(estadoAtual, tamanhoPagina, indicePagina);
             
         
     }

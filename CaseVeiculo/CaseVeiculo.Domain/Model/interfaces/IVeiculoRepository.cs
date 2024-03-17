@@ -7,6 +7,8 @@ namespace CaseVeiculo.Domain.Model.interfaces
     {
         Task AlterarEstado(Guid Id, EstadosDoVeiculo estado);
         bool IsValidTransition(EstadosDoVeiculo estadoAtual, EstadosDoVeiculo novoEstado);
-        Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual);
+        Task<IEnumerable<Veiculo>> ListarVeiculosPeloEstado(EstadosDoVeiculo estadoAtual, 
+                                                            int tamanhoPagina,
+                                                            int indicePagina);
     }
 }
