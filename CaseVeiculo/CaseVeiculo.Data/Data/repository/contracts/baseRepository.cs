@@ -1,6 +1,4 @@
 ﻿using CaseVeiculo.Data.Data.db;
-using CaseVeiculo.Domain.Model.entities;
-using CaseVeiculo.Domain.Model.enums;
 using CaseVeiculo.Domain.Model.interfaces;
 using Microsoft.EntityFrameworkCore;
 

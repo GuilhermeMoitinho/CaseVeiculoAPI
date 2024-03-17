@@ -6,8 +6,6 @@ using CaseVeiculo.Application.Application.Extensions.ExtensionsViewModel;
 using CaseVeiculo.Application.Application.serviceResponse;
 using CaseVeiculo.Application.Application.DTOs.inpuModel;
 using CaseVeiculo.Application.Application.Extensions.ExtensionsInputModel;
-using Microsoft.EntityFrameworkCore;
-using CaseVeiculo.Domain.Model.entities;
 
 namespace CaseVeiculo.Controllers
 {
@@ -16,12 +14,10 @@ namespace CaseVeiculo.Controllers
     public class VeiculoController : ControllerBase
     {
         private readonly IVeiculoService _veiculoService;
-        private readonly AppDbContext _context;
 
-        public VeiculoController(IVeiculoService veiculoService, AppDbContext context)
+        public VeiculoController(IVeiculoService veiculoService)
         {
             _veiculoService = veiculoService;
-            _context = context;
         }
 
         [HttpPatch]

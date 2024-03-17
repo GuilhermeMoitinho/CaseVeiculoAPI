@@ -1,10 +1,5 @@
 ﻿using CaseVeiculo.Domain.Model.entities;
 using CaseVeiculo.Domain.Model.enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CaseVeiculo.Domain.Model.interfaces
 {

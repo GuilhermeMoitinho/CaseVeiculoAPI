@@ -3,12 +3,6 @@ using CaseVeiculo.Domain.Model.entities;
 using CaseVeiculo.Domain.Model.enums;
 using CaseVeiculo.Domain.Model.interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CaseVeiculo.Data.Data.repository
 {

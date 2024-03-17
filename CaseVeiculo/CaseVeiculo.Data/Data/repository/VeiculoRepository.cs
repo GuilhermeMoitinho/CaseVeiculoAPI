@@ -4,24 +4,17 @@ using CaseVeiculo.Domain.Model.entities;
 using CaseVeiculo.Domain.Model.enums;
 using CaseVeiculo.Domain.Model.interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CaseVeiculo.Data.Data.repository
 {
     public class VeiculoRepository : baseRepository<Veiculo>, IVeiculoRepository
     {
         private readonly AppDbContext _context;
-        private readonly IAuditoriaRepository _auditoriaRepository;
 
-        public VeiculoRepository(AppDbContext context, IAuditoriaRepository auditoriaRepository) 
+        public VeiculoRepository(AppDbContext context) 
                 : base(context)
         {
             _context = context;
-            _auditoriaRepository = auditoriaRepository;
         }
 
         public override Task<Veiculo> BuscarVeiculoPorIdAsync(Guid Id)

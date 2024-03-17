@@ -1,5 +1,4 @@
 ﻿using CaseVeiculo.Domain.Model.enums;
-using CaseVeiculo.Domain.Model;
 using System.Text.Json.Serialization;
 
 namespace CaseVeiculo.Domain.Model.entities

@@ -12,6 +12,6 @@ namespace CaseVeiculo.Application.Application.interfaces
     {
         Task AdicionarEstadosDoVeiculo(Guid Id, EstadosDoVeiculo estado);
         Task CriarHistoricoDeEstados(Guid Id, EstadosDoVeiculo estado);
-        Task<   IEnumerable<AuditoriaVeiculo>> ListAuditoria(Guid id);
+        Task<IEnumerable<AuditoriaVeiculo>> ListAuditoria(Guid id);
     }
 }

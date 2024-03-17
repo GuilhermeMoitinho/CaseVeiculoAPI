@@ -27,8 +27,6 @@ namespace CaseVeiculo.middleware
 
         private Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
-            //TODO: Gravar log de erro com o trace id
-
             ErrorDetailsViewModel errorResponseVm;
 
             if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development" ||
@@ -39,8 +37,6 @@ namespace CaseVeiculo.middleware
             }
             else
             {
-                //Homologação, Pre Prod, Produção...
-
                 errorResponseVm = new ErrorDetailsViewModel(HttpStatusCode.InternalServerError.ToString(),
                                                       "An internal server error has occurred.");
             }

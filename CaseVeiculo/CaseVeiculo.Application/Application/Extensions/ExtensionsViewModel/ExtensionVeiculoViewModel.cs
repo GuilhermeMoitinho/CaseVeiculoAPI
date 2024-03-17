@@ -19,21 +19,8 @@ namespace CaseVeiculo.Application.Application.Extensions.ExtensionsViewModel
             return viewModel;   
         }
 
-        public static VeiculoViewModel TransFormarIdEmViewModel
-            (this Guid id)
-        {
-            var viewModel = new VeiculoViewModel()
-            {
-                Id = id,
-            };
-
-            return viewModel;
-        }
-
         public static IEnumerable<VeiculoViewModel> TransformarEmListaDeViewModel
             (this IEnumerable<Veiculo> veiculoListEntity)
-                => veiculoListEntity.Select(ve => ve.TransFormarEmViewModel()).ToList();    
-
-        
+                => veiculoListEntity.Select(ve => ve.TransFormarEmViewModel()).ToList();         
     }
 }
